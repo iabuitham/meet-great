@@ -37,9 +37,7 @@ const invitees = {
     fieldEmail: document.getElementById('fieldEmail'),
     fieldInvitees: document.getElementById('fieldInvitees'),
     groupEmail: document.getElementById('groupEmail'),
-    groupLocation: document.getElementById('groupLocation'),
     errorEmail: document.getElementById('errorEmail'),
-    errorLocation: document.getElementById('errorLocation'),
     inviteId: document.getElementById('inviteId'),
 
     btnSubmit: document.getElementById('btnSubmit'),
@@ -175,13 +173,6 @@ const invitees = {
       valid = false;
     } else {
       clearFieldError(els.groupEmail, els.errorEmail);
-    }
-
-    if (!els.fieldLocation.value.trim()) {
-      setFieldError(els.groupLocation, els.errorLocation, "Tell us where you're traveling from.");
-      valid = false;
-    } else {
-      clearFieldError(els.groupLocation, els.errorLocation);
     }
 
     return valid;
@@ -450,12 +441,6 @@ const invitees = {
         isValidEmail(els.fieldEmail.value)
           ? clearFieldError(els.groupEmail, els.errorEmail)
           : setFieldError(els.groupEmail, els.errorEmail, 'Enter a valid email address.');
-      }
-    });
-
-    els.fieldLocation.addEventListener('blur', () => {
-      if (els.fieldLocation.value.trim()) {
-        clearFieldError(els.groupLocation, els.errorLocation);
       }
     });
   }
