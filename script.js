@@ -10,7 +10,17 @@
    *    by a real lookup (serverless function, API, etc).
    * ------------------------------------------------------------------- */
 const invitees = {
-  'SJ26-BLK': { name: 'BLK', invitees:2 },
+  'SJ26-SLCTD': { name: 'SLCTD Burger', invitees:5 },
+  'SJ26-LUMA': { name: 'LUMA Drinks', invitees:2 },
+  'SJ26-KHOBZEHWSHAWRMA': { name: 'Khobzeh W Shawerma', invitees:2 },
+  'SJ26-SAHEEL': { name: 'Al Saheel Supermarket', invitees:2 },
+  'SJ26-SUSHICRUSH': { name: 'Sushi Crush', invitees:2 },
+  'SJ26-ETR': { name: 'Escape The Room', invitees:4 },
+  'SJ26-BLK': { name: 'BLK', invitees:4 },
+  'SJ26-GLOWZONE': { name: 'Glow Zone', invitees:2 },
+  'SJ26-ABUSHAIKHA': { name: 'Abu Shaikha Drug Store', invitees:4 },
+  'SJ26-WINGSMASTER': { name: 'Wings Master', invitees:5 },
+  'SJ26-MRBURRITOS': { name: 'Mr. Burritos', invitees:2 }
 };
 
   /* ------------------------------------------------------------------- *
