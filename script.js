@@ -15,7 +15,7 @@ const invitees = {
   'SJ26-KHOBZEHWSHAWRMA': { name: 'Khobzeh W Shawerma', invitees:2 },
   'SJ26-SAHEEL': { name: 'Al Saheel Supermarket', invitees:2 },
   'SJ26-SUSHICRUSH': { name: 'Sushi Crush', invitees:2 },
-  'SJ26-ESCAPETEROOM': { name: 'Escape The Room', invitees:4 },
+  'SJ26-ESCAPETHEROOM': { name: 'Escape The Room', invitees:4 },
   'SJ26-BLK': { name: 'BLK', invitees:4 },
   'SJ26-GLOWZONE': { name: 'Glow Zone', invitees:2 },
   'SJ26-ABUSHAIKHA': { name: 'Abu Shaikha Drug Store', invitees:4 },
