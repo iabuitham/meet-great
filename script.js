@@ -1,14 +1,6 @@
-/* =========================================================================
-   SUMMER JAM 8 — "THE WARRIOR"
-   Vanilla JS invitation logic
-   ========================================================================= */
 (function () {
   'use strict';
 
-  /* ------------------------------------------------------------------- *
-   * 1. Invitee "database" (demo). In production this would be replaced
-   *    by a real lookup (serverless function, API, etc).
-   * ------------------------------------------------------------------- */
 const invitees = {
   'SJ26-SLCTD': { name: 'SLCTD Burger', invitees:5 },
   'SJ26-LUMA': { name: 'LUMA Drinks', invitees:2 },
@@ -23,9 +15,6 @@ const invitees = {
   'SJ26-MRBURRITOS': { name: 'Mr. Burritos', invitees:2 }
 };
 
-  /* ------------------------------------------------------------------- *
-   * 2. DOM references
-   * ------------------------------------------------------------------- */
   const els = {
     heroInvitee: document.getElementById('heroInvitee'),
     heroBg: document.getElementById('heroBg'),
@@ -129,7 +118,7 @@ const invitees = {
     els.fieldName.value = invitee.name;
 
     els.fieldInvitees.value =
-        `${invitee.invitees} ${invitee.invitees === '1' ? 'Person' : 'People'}`;
+        `${invitee.invitees} ${invitee.invitees === 1 ? 'Person' : 'People'}`;
 
     els.inviteId.value = invitee.id;
 

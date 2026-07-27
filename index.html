@@ -11,7 +11,7 @@
 <meta name="color-scheme" content="dark">
 
 <!-- Favicon -->
-<link rel="icon" type="image/svg+xml" href="assets/logo.png">
+<link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="apple-touch-icon" href="assets/logo.png">
 
 <!-- Open Graph -->
@@ -48,8 +48,25 @@
     <div class="hero__content">
       <p class="hero__eyebrow">Beats Events Presents</p>
       <h1 class="hero__title">YOU'RE&nbsp;INVITED</h1>
-      <p class="hero__subtitle">SUMMER JAM 8 <span class="hero__theme">— THE WARRIOR - Meet & Great</span></p>
-      <p class="hero__detials">Alf Leileh W Leileh, Amman - 11 August - 8:00PM</p>
+      <p class="hero__subtitle">SUMMER JAM 8 — THE WARRIOR · <span class="hero__theme">MEET &amp; GREET</span> </p>
+
+      <p class="hero__venue">Bilkana Rooftop, Amman <span class="hero__venue-dot" aria-hidden="true">•</span> 12 August <span class="hero__venue-dot" aria-hidden="true">•</span> 8:00 PM</p>
+
+      <div class="hero__partners">
+        <p class="hero__partners-label">In Partnership With</p>
+        <div class="partnership-logos">
+          <span class="partnership-logo-box">
+    <img src="assets/Thousandnights-logo-white.png" alt="Thousand Nights" class="thousand">
+</span>
+
+<span class="partnership-divider"></span>
+
+<span class="partnership-logo-box bilkana-box">
+    <img src="assets/bilkana-logo.png" alt="Bilkana" class="bilkana">
+</span>
+        </div>
+      </div>
+
       <p class="hero__invitee" id="heroInvitee" aria-live="polite"></p>
     </div>
 
@@ -78,7 +95,7 @@
         <!-- Welcome / decision -->
         <div class="panel" id="panelWelcome">
           <h2 class="panel__heading">Hello, <span id="inviteeName">Friend</span></h2>
-          <p class="panel__lede">You've been invited to <strong>Summer Jam 8: The Warrior - Meet & Great</strong>. Answer the call before the gates seal.</p>
+          <p class="panel__lede">You've been invited to <strong>Summer Jam 8: The Warrior — Meet &amp; Greet</strong>. Answer the call before the gates seal.</p>
 
           <div class="action-row">
             <button type="button" class="btn btn--primary" id="btnAccept" aria-describedby="inviteeName">
@@ -134,7 +151,7 @@
               <label class="form-label" for="fieldEmail">Email</label>
               <input class="form-control" type="email" name="email" id="fieldEmail" required
                      aria-describedby="errorEmail" autocomplete="email">
-              <p class="form-error" id="errorEmail">Enter a valid email address that you want the ticekt to be sent to.</p>
+              <p class="form-error" id="errorEmail">Enter a valid email address — your ticket will be sent here.</p>
             </div>
             
             <div class="form-group">
