@@ -2,17 +2,47 @@
   'use strict';
 
 const invitees = {
-  'SJ26-SLCTD': { name: 'SLCTD Burger', invitees:5 },
-  'SJ26-LUMA': { name: 'LUMA Drinks', invitees:2 },
-  'SJ26-KHOBZEHWSHAWRMA': { name: 'Khobzeh W Shawerma', invitees:2 },
-  'SJ26-SAHEEL': { name: 'Al Saheel Supermarket', invitees:2 },
-  'SJ26-SUSHICRUSH': { name: 'Sushi Crush', invitees:2 },
-  'SJ26-ESCAPETHEROOM': { name: 'Escape The Room', invitees:4 },
-  'SJ26-BLK': { name: 'BLK', invitees:4 },
-  'SJ26-GLOWZONE': { name: 'Glow Zone', invitees:2 },
-  'SJ26-ABUSHAIKHA': { name: 'Abu Shaikha Drug Store', invitees:4 },
-  'SJ26-WINGSMASTER': { name: 'Wings Master', invitees:5 },
-  'SJ26-MRBURRITOS': { name: 'Mr. Burritos', invitees:2 }
+  'SJ26-ZAID': { name: 'Zaid Rabih', invitees: 2 },
+  'SJ26-BOYFIRE': { name: 'Boy Fire', invitees: 2 },
+  'SJ26-HITCH': { name: 'Hitch', invitees: 2 },
+  'SJ26-ZEEZO': { name: 'Zeezo', invitees: 2 },
+  'SJ26-FLSHB': { name: 'FlashB', invitees: 2 },
+  'SJ26-WASEMS': { name: 'Waseem Safouri', invitees: 2 },
+  'SJ26-BOBH': { name: 'Bob Hattar', invitees: 2 },
+  'SJ26-KAY': { name: 'Kay', invitees: 2 },
+  'SJ26-NAIJA': { name: 'Naija', invitees: 2 },
+  'SJ26-WARAYA': { name: 'Waraya', invitees: 2 },
+  'SJ26-AUTOSTRAD': { name: 'Autostrad', invitees: 7 },
+  'SJ26-JANR': { name: 'Jan Rahmeh', invitees: 1 },
+  'SJ26-ALIS': { name: 'Ali Al Silik', invitees: 1 },
+  'SJ26-EVIL': { name: 'Evil', invitees: 2 },
+  'SJ26-IWAN': { name: 'Iwan', invitees: 2 },
+  'SJ26-ZELCI': { name: 'Zelci', invitees: 2 },
+  'SJ26-YAZAMAN': { name: 'Yazaman Band', invitees: 5 },
+  'SJ26-AHMADKH': { name: 'Ahmad Khaled', invitees: 2 },
+  'SJ26-LUAY': { name: 'Luay Hijazeen', invitees: 2 },
+  'SJ26-SAFSAFADI': { name: 'Saif Safadi', invitees: 2 },
+  'SJ26-AG': { name: 'AG', invitees: 2 },
+  'SJ26-SAIFROMAN': { name: 'Saif Roman', invitees: 2 },
+  'SJ26-RASTAFANDY': { name: 'Thaer Fahmawi', invitees: 2 },
+  'SJ26-JALAL': { name: 'Jalal Halaweh', invitees: 1 },
+  'SJ26-ISSA': { name: 'Issa Abu Itham', invitees: 1 },
+  'SJ26-OLA': { name: 'Ola Badosi', invitees: 1 },
+  'SJ26-DINA': { name: 'Dina Alawi', invitees: 1 },
+  'SJ26-JACOB': { name: 'Jacoub Al Basha', invitees: 1 },
+  'SJ26-LARA': { name: 'Lara Adwan', invitees: 1 },
+  'SJ26-HIJJAWI': { name: 'Ahmad Hijjawi', invitees: 1 },
+  'SJ26-ABBA': { name: 'Mohammad Abbadi', invitees: 1 },
+  'SJ26-JIMM': { name: 'Jamal Al Mousa', invitees: 1 },
+  'SJ26-TAKH': { name: 'Tareq Khalifeh', invitees: 1 },
+  'SJ26-ANASQ': { name: 'Anas Qandeel', invitees: 1 },
+  'SJ26-HALA': { name: 'Hala Qattan', invitees: 1 },
+  'SJ26-YAZAN': { name: 'Yazan Al Basha', invitees: 1 },
+  'SJ26-MALEK': { name: 'Malek Al Rajabi', invitees: 1 },
+  'SJ26-SAIF': { name: 'Saif Sobuh', invitees: 1 },
+  'SJ26-ROYA': { name: 'Roya Music', invitees: 2 },
+  'SJ26-RADIONOON': { name: 'Radio Noon', invitees: 2 },
+  'SJ26-RADIOMUSTAQEL': { name: 'Radio Mustaqel', invitees: 2 }
 };
 
   const els = {
@@ -75,7 +105,7 @@ const invitees = {
       if (!raw) return null;
       // Sanitize: keep only alphanumeric characters, cap length to guard
       // against injection or oversized query values.
-      const clean = raw.replace(/[^a-zA-Z0-9-]/g, '').slice(0, 20);      
+      const clean = raw.replace(/[^a-zA-Z0-9-]/g, '');      
       return clean.length ? clean.toUpperCase() : null;
     } catch (err) {
       console.error('getInviteID failed:', err);
