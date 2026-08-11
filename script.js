@@ -46,6 +46,10 @@ const invitees = {
   'SJ26-HAMZA': {name: 'Hamza Majali', invitees: 1},
   'SJ26-NESREEN': { name: 'Nesreen', invitees: 1 },
   'SJ26-TAANI': { name: 'Mohamad Taani', invitees: 1 },
+  'SJ26-WARALTERAWI': {name: 'Ward Al Terawi', invitees: 2},
+  'SJ26-ATTARI': { name: 'Abdedalrahman Attari', invitees: 1 },
+  'SJ26-NALCHIK': { name: 'Nalchik', invitees: 1 },
+  
 };
 
   const els = {
