@@ -43,7 +43,9 @@ const invitees = {
   'SJ26-ROYA': { name: 'Roya Music', invitees: 2 },
   'SJ26-RADIONOON': { name: 'Radio Noon', invitees: 2 },
   'SJ26-RADIOMUSTAQEL': { name: 'Radio Mustaqel', invitees: 2 },
-  'SJ26-HAMZA': {name: 'Hamza Majali', invitees: 2}
+  'SJ26-HAMZA': {name: 'Hamza Majali', invitees: 1},
+  'SJ26-NESREEN': { name: 'Nesreen', invitees: 1 },
+  'SJ26-TAANI': { name: 'Mohamad Taani', invitees: 1 },
 };
 
   const els = {
